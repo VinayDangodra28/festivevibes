@@ -93,7 +93,7 @@
               <li><a href="#">Others</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#footer">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -157,40 +157,40 @@
   // Sample JSON data representing portfolio items
 const portfolioData = [
   {
-    "name": "App 1",
-    "category": "App",
-    "price": "$19.99",
-    "image": "assets/img/portfolio/portfolio-1.jpg"
+    "name": "Kamal Rakshabandhan Aarti Thali",
+    "category": "Aarti Thali",
+    "price": "₹35",
+    "image": "assets/img/productone.jpeg"
   },
   {
-    "name": "App 1",
-    "category": "App",
-    "price": "$19.99",
-    "image": "assets/img/portfolio/portfolio-1.jpg"
+    "name": "Kankavati Aarti Thali",
+    "category": "Kankavati  ",
+    "price": "₹65",
+    "image": "assets/img/producttwo.jpeg"
   },
   {
-    "name": "App 1",
-    "category": "App",
-    "price": "$19.99",
-    "image": "assets/img/portfolio/portfolio-1.jpg"
+    "name": "Kairi Kankavati",
+    "category": "Kankavati",
+    "price": "₹35",
+    "image": "assets/img/productthree.jpeg"
   },
   {
-    "name": "App 1",
-    "category": "App",
-    "price": "$19.99",
-    "image": "assets/img/portfolio/portfolio-1.jpg"
+    "name": "Ganesh Special Aarti Thali",
+    "category": "Aarti Thali",
+    "price": "₹65",
+    "image": "assets/img/productfour.jpeg"
   },
   {
-    "name": "App 1",
-    "category": "App",
-    "price": "$19.99",
-    "image": "assets/img/portfolio/portfolio-1.jpg"
+    "name": "Flower Kankavati",
+    "category": "Kankavati",
+    "price": "₹35",
+    "image": "assets/img/productfive.jpeg"
   },
   {
-    "name": "App 1",
-    "category": "App",
-    "price": "$19.99",
-    "image": "assets/img/portfolio/portfolio-1.jpg"
+    "name": "Peacock Kankavati",
+    "category": "Kankavati",
+    "price": "₹65",
+    "image": "assets/img/productsix.jpeg"
   },
   // Add more portfolio items here...
 ];
@@ -204,7 +204,7 @@ function populatePortfolioItems() {
     const portfolioItem = document.createElement('div');
     portfolioItem.className = `portfolio-item`;
     portfolioItem.innerHTML = `
-      <img src="${item.image}" class="img-fluid" alt="">
+      <img style="height: 400px;" src="${item.image}" class="img-fluid" alt="">
       <div class="portfolio-info">
         <h3>${item.name}</h3>
         <p>Price: ${item.price}</p>
@@ -228,7 +228,7 @@ window.addEventListener('load', populatePortfolioItems);
 
   <footer style="margin-top: 70%;" id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    <div class="footer-newsletter">
+    <!-- <div class="footer-newsletter">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -243,7 +243,7 @@ window.addEventListener('load', populatePortfolioItems);
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   
     <div class="footer-top">
       <div class="container">
@@ -274,23 +274,20 @@ window.addEventListener('load', populatePortfolioItems);
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              123 Festive Street <br>
-              City, State 12345<br>
-              Country <br><br>
-              <strong>Phone:</strong> +1 123-456-7890<br>
-              <strong>Email:</strong> contact@festivevibes.com<br>
+              
+              <div class="social-links mt-3">
+                On<a href="https://www.instagram.com/festive_vibes_official/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+              <br>
+              <strong>Phone:</strong>+91 9022425885<br>
+              <strong>Email:</strong> festivevibes8@gmail.com<br>
             </p>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About Festive Vibes</h3>
             <p>We are dedicated to bringing joy and happiness to your celebrations with our beautiful plastic rangolis, rakhis, aarti thalis, shubh labh, and various other decorative items.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+            
           </div>
   
         </div>
